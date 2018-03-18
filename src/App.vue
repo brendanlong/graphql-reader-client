@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FeedList/>
+    <EntryList/>
+    <Entry/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Entry from "./components/Entry.vue";
+import EntryList from "./components/EntryList.vue";
+import FeedList from "./components/FeedList.vue";
 
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
+    Entry,
+    EntryList,
+    FeedList
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
